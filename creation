@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colors</title>
+</head>
+
+<body>
+
+    <h1>All About Colors</h1>
+
+    <p>
+        Colors are an important part of our everyday life.
+        They make things beautiful and help us identify different objects.
+    </p>
+
+    <h2>Primary Colors</h2>
+
+    <p>
+        The three primary colors are:
+    </p>
+
+    <ul>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+    </ul>
+
+    <h2>Secondary Colors</h2>
+
+    <p>
+        Secondary colors are created by mixing two primary colors.
+    </p>
+
+    <ul>
+        <li>Red + Yellow = Orange</li>
+        <li>Blue + Yellow = Green</li>
+        <li>Red + Blue = Purple</li>
+    </ul>
+
+    <h2>Common Colors and Their Meanings</h2>
+
+    <table border="1">
+        <tr>
+            <th>Color</th>
+            <th>Meaning</th>
+        </tr>
+
+        <tr>
+            <td>Red</td>
+            <td>Love, danger, energy and passion</td>
+        </tr>
+
+        <tr>
+            <td>Blue</td>
+            <td>Peace, trust and calmness</td>
+        </tr>
+
+        <tr>
+            <td>Green</td>
+            <td>Nature, growth and freshness</td>
+        </tr>
+
+        <tr>
+            <td>Yellow</td>
+            <td>Happiness, brightness and optimism</td>
+        </tr>
+
+        <tr>
+            <td>Purple</td>
+            <td>Royalty, creativity and luxury</td>
+        </tr>
+
+        <tr>
+            <td>Orange</td>
+            <td>Energy, excitement and enthusiasm</td>
+        </tr>
+
+        <tr>
+            <td>Black</td>
+            <td>Power, elegance and mystery</td>
+        </tr>
+
+        <tr>
+            <td>White</td>
+            <td>Peace, purity and simplicity</td>
+        </tr>
+    </table>
+
+    <h2>Conclusion</h2>
+
+    <p>
+        Colors are useful in art, fashion, websites, advertisements,
+        decoration and many other areas. Learning about colors can help
+        us understand how different colors work together.
+    </p>
+
+</body>
+i</html>
+
