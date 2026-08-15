@@ -1,10 +1,16 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:22'
+        }
+    }
 
     stages {
+
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/ALACHEMS/Aegis-html.git', branch: 'main'
+                echo 'Checking out source code...'
+                checkout scm
             }
         }
 
@@ -17,7 +23,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Building the application...'
+                echo 'Building application...'
                 sh 'npm run build'
             }
         }
@@ -25,28 +31,23 @@ pipeline {
         stage('Archive Artifacts') {
             steps {
                 echo 'Archiving build artifacts...'
-                // Adjust the path to your build folder
-                archiveArtifacts artifacts: 'dist/**', allowEmptyArchive: true
+                archiveArtifacts artifacts: '**/dist/**', allowEmptyArchive: true
             }
         }
     }
 
     post {
         success {
-            echo '✅ Build succeeded!'
-            // Example: send a Slack notification
-            // slackSend(channel: '#dev', message: "Build SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}")
+            echo '✅ Build completed successfully!'
         }
+
         failure {
             echo '❌ Build failed!'
-            // Example: send a Slack notification
-            // slackSend(channel: '#dev', message: "Build FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}")
         }
+
         always {
             echo 'Cleaning workspace...'
             cleanWs()
         }
     }
 }
-
-
