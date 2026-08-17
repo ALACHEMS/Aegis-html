@@ -15,17 +15,11 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
-            steps {
-                echo 'Installing npm dependencies...'
-                sh 'npm install'
-            }
-        }
 
         stage('Build') {
             steps {
                 echo 'Building application...'
-                sh 'npm run build'
+               
             }
         }
 
